@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+    <title>candiVision</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="/" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.12/d3.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
+    <link rel="stylesheet" href="/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="/css/site.css">
+
+</head>
+
+<body ng-controller="GlobalController as nav">
+    <div>
+        <div class="pure-g" id="navBar">
+            <div class="pure-u-1-3">
+                <img ui-sref="Home" class="clickable" id="logo" src="/css/assets/logo.png">
+                <i ng-show='nav.status.premiumStatus' class="fa fa-star" id='sustainingMember'></i>
+            </div>
+            <div class="pure-u-1-3"> 
+
+            </div>
+            <div class="pure-u-1-3">
+                <div class="pure-menu pure-menu-horizontal" id="btnMenu">
+                    <ul class="pure-menu-list">
+                        <li class="pure-menu-item pure-menu-selected">
+                            <button ui-sref="Home" class="pure-button pure-button-active"><i class="fa fa-home"></i></button>
+                        </li>
+                        <li class="pure-menu-item pure-menu-selected" ng-show='!nav.status._id'>
+                            <button class="pure-button pure-button-active" ng-click="nav.openReg()">Register</button>
+                        </li>
+                        <li class="pure-menu-selected pure-menu-item pure-menu-has-children pure-menu-allow-hover" ng-show='!nav.status._id'>
+                            <button class="pure-menu-link pure-button pure-button-active">Sign In</button>
+                            <ul class="pure-menu-children">
+                                <li ng-click="nav.openLogin()" class="dropdown pure-menu-link"><i class="fa fa-envelope-o"></i> &nbsp; Email</li>
+                                <li class="dropdown pure-menu-item"><a href="/api/v1/users/auth/facebook" target="_self" class="pure-menu-link"><i class="fa fa-facebook-square"></i> &nbsp; Facebook</a></li>
+                                <li class="dropdown pure-menu-item">
+                                    <a href="/api/v1/users/auth/twitter" target="_self" class="pure-menu-link"> <i class="fa fa-twitter"></i> &nbsp; Twitter</a>
+                                </li>
+                                <li class="dropdown pure-menu-item"><a href="/api/v1/users/auth/google" target="_self" class="pure-menu-link"><i class="fa fa-google"></i> &nbsp; Google</a></li>
+                            </ul>
+                        </li>
+                        <li class="pure-menu-item pure-menu-selected" ng-show='nav.status._id'>
+                            <button class="pure-button pure-button-active" ui-sref='Stripe'>Donate</button>
+                        </li>
+                        <li class="pure-menu-item pure-menu-selected" ng-show='nav.status._id'>
+                            <button class="pure-button pure-button-active" ng-click="nav.logout();">Log Out</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ui-view></ui-view>
+    <div my-footer></div>
+    <!-- External Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.0.0/ui-bootstrap.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.0.0/ui-bootstrap-tpls.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+    <script src="https://js.stripe.com/v2/"></script>
+    <script src="https://rawgit.com/aguirrel/ng-currency/master/src/ng-currency.js"></script>
+    <!-- Modules -->
+<!--     // <script src="/javascript/app.js"></script>
+    // <script src="/javascript/services/UserFactory.js"></script>
+    // <script src="/javascript/services/SentimentFactory.js"></script>
+    // <script src="/javascript/services/TweetFactory.js"></script>
+    // <script src="/javascript/services/EmailFactory.js"></script>
+    // <script src="/javascript/services/CandidateFactory.js"></script>
+    // <script src="/javascript/services/SMSFactory.js"></script>
+    // <script src="/javascript/services/CommentFactory.js"></script>
+    // <script src="/javascript/services/StripeFactory.js"></script>
+
+    // <script src="/javascript/controllers/GlobalController.js"></script>
+    // <script src="/javascript/controllers/HomeController.js"></script>
+    // <script src="/javascript/controllers/WelcomeController.js"></script>
+    // <script src="/javascript/controllers/ProfileController.js"></script>
+    // <script src="/javascript/controllers/CandidateController.js"></script>
+    // <script src="/javascript/controllers/ContactFormController.js"></script>
+    // <script src="/javascript/controllers/StripeController.js"></script>
+    // <script src="/javascript/footerDirective.js"></script>
+    // <script src="/javascript/controllers/PasswordResetController.js"></script> -->
+    
+    <script src="/js/jsBundle.min.js"></script>
+</body>
+
+</html>

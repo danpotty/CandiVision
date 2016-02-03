@@ -1,0 +1,28 @@
+<div class="modal-header">
+    <h3 style="text-align: center;" class="modal-title">Register</h3>
+</div>
+<div class="modal-body">
+    <form ng-show="!vm.loading" id="registration" class="pure-form pure-form-aligned">
+        <fieldset>
+            <label>Email</label>
+            <div class="pure-control-group">
+                <input id="email" type="email" ng-model="vm.user.email" placeholder="Email Required">
+            </div>
+            <label>Password</label>
+            <div class="pure-control-group">
+                <input id="password" type="password" ng-model="vm.user.password" placeholder="Password Required">
+            </div>
+            <label>Phone Number</label>
+            <div class="pure-control-group">
+                <input id="password" type="number" ng-model="vm.user.phoneNumber" placeholder="Phone Number">
+            </div>
+        </fieldset>
+    </form>
+    <div ng-show="vm.loading">
+        <h1>Please wait...</h1>
+    </div>
+</div>
+<div class="modal-footer" style="text-align:center;">
+    <button class="pure-button pure-button-active" type="button" ng-click="cancel()" style="backgrond-color: red;">Cancel</button>
+    <button class="pure-button pure-button-active" type="button" ng-click="ok()">Register</button>
+</div>

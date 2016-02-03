@@ -1,0 +1,198 @@
+html,
+ui-view,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: "Lato";
+    background: rgba(147, 201, 237, 1);
+    background: -moz-linear-gradient(left, rgba(147, 201, 237, 1) 0%, rgba(147, 201, 237, 1) 3%, rgba(220, 222, 250, 1) 50%, rgba(230, 115, 115, 1) 95%, rgba(230, 115, 115, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(147, 201, 237, 1)), color-stop(3%, rgba(147, 201, 237, 1)), color-stop(50%, rgba(220, 222, 250, 1)), color-stop(95%, rgba(230, 115, 115, 1)), color-stop(100%, rgba(230, 115, 115, 1)));
+    background: -webkit-linear-gradient(left, rgba(147, 201, 237, 1) 0%, rgba(147, 201, 237, 1) 3%, rgba(220, 222, 250, 1) 50%, rgba(230, 115, 115, 1) 95%, rgba(230, 115, 115, 1) 100%);
+    background: -o-linear-gradient(left, rgba(147, 201, 237, 1) 0%, rgba(147, 201, 237, 1) 3%, rgba(220, 222, 250, 1) 50%, rgba(230, 115, 115, 1) 95%, rgba(230, 115, 115, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(147, 201, 237, 1) 0%, rgba(147, 201, 237, 1) 3%, rgba(220, 222, 250, 1) 50%, rgba(230, 115, 115, 1) 95%, rgba(230, 115, 115, 1) 100%);
+    background: linear-gradient(to right, rgba(147, 201, 237, 1) 0%, rgba(147, 201, 237, 1) 3%, rgba(220, 222, 250, 1) 50%, rgba(230, 115, 115, 1) 95%, rgba(230, 115, 115, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#93c9ed', endColorstr='#e67373', GradientType=1);
+}
+
+.aboutPadding {
+    padding-left: 4em;
+}
+
+html,
+button,
+input,
+select,
+textarea,
+.pure-g [class *="pure-u"] {
+    font-family: "Lato" !important;
+}
+
+#navBar {
+    margin-bottom: 5px;
+}
+
+
+#logo {
+    height: 40px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.pure-button {
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+ul {
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+
+#demCandidate {
+    background-color: rgba(147, 201, 237, 1);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    position: fixed;
+    height: 100%;
+}
+
+#repCandidate {
+    background-color: rgba(255, 138, 138, 1);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    position: fixed;
+    height: 100%;
+}
+
+#btnMenu {
+    margin-top: 5px;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.pure-menu-item a:hover {
+    text-decoration: none !important;
+}
+
+.dropdown {
+    text-align: left;
+}
+
+#viz {
+    margin-top: 70px;
+}
+
+#multiViz {
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: solid 3px;
+    height: 350px;
+}
+
+#multiVizBtn {
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#multiVizData {
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#bernie,
+#hillary,
+#trump,
+#rubio {
+    margin-top: 50%;
+    max-height: 250px !important;
+    min-height: 20px !important;
+}
+
+.tweet-stream-div {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+    display: inline;
+}
+
+#registration,
+#login,
+#validation {
+    text-align: center;
+}
+
+.contact {
+    text-align: center;
+}
+
+.mainContent {
+    position: relative;
+    height: 80%;
+}
+
+.clickable {cursor: pointer;}
+
+.modal-content {
+    background-color: rgba(229, 213, 251, 0.8);
+}
+
+
+/*----------------------------------
+--------D3 CHART STYLING------------
+-----------------------------------*/
+
+path {
+	stroke: green;
+	stroke-width: 5;
+	fill: none;
+}
+
+.axis {
+	shape-rendering: crispEdges;
+}
+.x.axis line {
+	stroke: darkgrey;
+}
+.x.axis .minor {
+	stroke-opacity: .5;
+}
+.x.axis path {
+	display: none;
+}
+.y.axis line, .y.axis path {
+	fill: none;
+	stroke: #000;
+}
+
+/*---------------------------------*/
+.stripe-form {
+    display: inline-block;
+}/*
+#donation-amount {
+    position: relative;
+}
+#donation-amount input {
+    padding-left: 30px;
+}
+#donation-amount i{
+    position: absolute;
+    padding: 10px 12px;
+    pointer-events: none;
+}*/
