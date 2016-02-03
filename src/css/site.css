@@ -124,10 +124,12 @@ ul {
     margin-bottom: 0px;
 }
 
+
 footer {
-    position: fixed;
+    position: relative;
     width: 100%;
     margin-bottom: 10px;
+    margin-top: 10px;
     text-align: center;
     display: inline;
 }
@@ -144,7 +146,8 @@ footer {
 
 .mainContent {
     position: relative;
-    height: 80%;
+    height: 100% !important;
+    padding-bottom: 100px !important;
 }
 
 .clickable {cursor: pointer;}
