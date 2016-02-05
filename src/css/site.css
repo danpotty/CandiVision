@@ -55,9 +55,13 @@ ul {
     background-color: rgba(0, 0, 0, 0) !important;
 }
 
+#dailyVizBox {
+    background-color: rgba(150, 148, 148, .5);
+    border-radius: 20%;
+}
 
-#demCandidate {
-    background-color: rgba(147, 201, 237, 1);
+#Marco_Rubio {
+    background-image: url(http://res.cloudinary.com/dhkd3et2r/image/upload/v1454632853/Screen_Shot_2016-02-04_at_4.39.21_PM_ztjj4h.png);
     top: 0;
     bottom: 0;
     left: 0;
@@ -65,10 +69,13 @@ ul {
     z-index: -1;
     position: fixed;
     height: 100%;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
 }
 
-#repCandidate {
-    background-color: rgba(255, 138, 138, 1);
+#Bernie_Sanders {
+    background-image: url(http://res.cloudinary.com/dhkd3et2r/image/upload/v1454628786/Screen_Shot_2016-02-03_at_3.04.24_PM-min_amu3t3.png);
     top: 0;
     bottom: 0;
     left: 0;
@@ -76,7 +83,37 @@ ul {
     z-index: -1;
     position: fixed;
     height: 100%;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
 }
+
+#Hillary_Clinton {
+    background-image: url(http://res.cloudinary.com/dhkd3et2r/image/upload/v1454633013/Screen_Shot_2016-02-04_at_4.32.07_PM_shqi4v.png);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    position: fixed;
+    height: 100%;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+}
+
+#Donald_Trump {
+    background-image: url(http://res.cloudinary.com/dhkd3et2r/image/upload/v1454628786/Screen_Shot_2016-02-03_at_3.02.29_PM-min_mgkzru.png);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    position: fixed;
+    height: 100%;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
 
 #btnMenu {
     margin-top: 5px;
