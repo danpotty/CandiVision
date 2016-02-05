@@ -55,6 +55,21 @@ ul {
     background-color: rgba(0, 0, 0, 0) !important;
 }
 
+#background {
+    background-image: url(http://res.cloudinary.com/dhkd3et2r/image/upload/v1454635396/Obama_l0pe0i.png);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    position: fixed;
+    height: 100%;
+    opacity: .7;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+}
+
 #dailyVizBox {
     background-color: rgba(150, 148, 148, .5);
     border-radius: 20%;
@@ -69,6 +84,7 @@ ul {
     z-index: -1;
     position: fixed;
     height: 100%;
+    opacity: .7;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -83,6 +99,7 @@ ul {
     z-index: -1;
     position: fixed;
     height: 100%;
+    opacity: .7;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -97,6 +114,7 @@ ul {
     z-index: -1;
     position: fixed;
     height: 100%;
+    opacity: .7;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -111,6 +129,7 @@ ul {
     z-index: -1;
     position: fixed;
     height: 100%;
+    opacity: .7;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
