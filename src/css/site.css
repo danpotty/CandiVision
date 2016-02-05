@@ -1,19 +1,26 @@
-html,
-ui-view,
-body {
-    height: 100%;
+ui-view {
+  height: 100%;
+}
+
+html {
+  height: 100%;
 }
 
 body {
-    font-family: "Lato";
-    background: rgba(147, 201, 237, 1);
-    background: -moz-linear-gradient(left, rgba(147, 201, 237, 1) 0%, rgba(147, 201, 237, 1) 3%, rgba(220, 222, 250, 1) 50%, rgba(230, 115, 115, 1) 95%, rgba(230, 115, 115, 1) 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(147, 201, 237, 1)), color-stop(3%, rgba(147, 201, 237, 1)), color-stop(50%, rgba(220, 222, 250, 1)), color-stop(95%, rgba(230, 115, 115, 1)), color-stop(100%, rgba(230, 115, 115, 1)));
-    background: -webkit-linear-gradient(left, rgba(147, 201, 237, 1) 0%, rgba(147, 201, 237, 1) 3%, rgba(220, 222, 250, 1) 50%, rgba(230, 115, 115, 1) 95%, rgba(230, 115, 115, 1) 100%);
-    background: -o-linear-gradient(left, rgba(147, 201, 237, 1) 0%, rgba(147, 201, 237, 1) 3%, rgba(220, 222, 250, 1) 50%, rgba(230, 115, 115, 1) 95%, rgba(230, 115, 115, 1) 100%);
-    background: -ms-linear-gradient(left, rgba(147, 201, 237, 1) 0%, rgba(147, 201, 237, 1) 3%, rgba(220, 222, 250, 1) 50%, rgba(230, 115, 115, 1) 95%, rgba(230, 115, 115, 1) 100%);
-    background: linear-gradient(to right, rgba(147, 201, 237, 1) 0%, rgba(147, 201, 237, 1) 3%, rgba(220, 222, 250, 1) 50%, rgba(230, 115, 115, 1) 95%, rgba(230, 115, 115, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#93c9ed', endColorstr='#e67373', GradientType=1);
+  height: 100%;
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+  font-family: "Lato";
+  background: rgba(147, 201, 237, 1);
+  background: -moz-linear-gradient(left, rgba(147, 201, 237, 1) 0%, rgba(147, 201, 237, 1) 3%, rgba(220, 222, 250, 1) 50%, rgba(230, 115, 115, 1) 95%, rgba(230, 115, 115, 1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(147, 201, 237, 1)), color-stop(3%, rgba(147, 201, 237, 1)), color-stop(50%, rgba(220, 222, 250, 1)), color-stop(95%, rgba(230, 115, 115, 1)), color-stop(100%, rgba(230, 115, 115, 1)));
+  background: -webkit-linear-gradient(left, rgba(147, 201, 237, 1) 0%, rgba(147, 201, 237, 1) 3%, rgba(220, 222, 250, 1) 50%, rgba(230, 115, 115, 1) 95%, rgba(230, 115, 115, 1) 100%);
+  background: -o-linear-gradient(left, rgba(147, 201, 237, 1) 0%, rgba(147, 201, 237, 1) 3%, rgba(220, 222, 250, 1) 50%, rgba(230, 115, 115, 1) 95%, rgba(230, 115, 115, 1) 100%);
+  background: -ms-linear-gradient(left, rgba(147, 201, 237, 1) 0%, rgba(147, 201, 237, 1) 3%, rgba(220, 222, 250, 1) 50%, rgba(230, 115, 115, 1) 95%, rgba(230, 115, 115, 1) 100%);
+  background: linear-gradient(to right, rgba(147, 201, 237, 1) 0%, rgba(147, 201, 237, 1) 3%, rgba(220, 222, 250, 1) 50%, rgba(230, 115, 115, 1) 95%, rgba(230, 115, 115, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#93c9ed', endColorstr='#e67373', GradientType=1);
 }
 
 .aboutPadding {
@@ -85,6 +92,12 @@ ul {
     text-align: left;
 }
 
+#main {
+  overflow: auto;
+  padding-bottom: 40px;
+  min-height: 100%;
+}
+
 #viz {
     margin-top: 70px;
 }
@@ -124,13 +137,14 @@ ul {
     margin-bottom: 0px;
 }
 
-.footer {
+footer {
     position: relative;
     width: 100%;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    height: 10px;
+    margin-bottom: -20px;
     text-align: center;
     display: inline;
+    clear: both;
 }
 
 #registration,
@@ -145,8 +159,7 @@ ul {
 
 .mainContent {
     position: relative;
-    height: 100% !important;
-    padding-bottom: 100px !important;
+    height: 80%;
 }
 
 .clickable {cursor: pointer;}

@@ -4,7 +4,6 @@ ui-view {
 
 html {
   height: 100%;
-  box-sizing: border-box;
 }
 
 body {
@@ -56,6 +55,16 @@ ul {
     background-color: rgba(0, 0, 0, 0) !important;
 }
 
+#backgroundtest {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/c/c3/USA_2000_presidential_popular_vote_by_county.jpg);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  position: fixed;
+  height: 100%;
+}
 
 #demCandidate {
     background-color: rgba(147, 201, 237, 1);
@@ -124,6 +133,38 @@ ul {
     margin-right: 5%;
 }
 
+#bernieBG {
+  background-image: url(http://www.motherjones.com/files/bernie_2.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  position: fixed;
+  height: 100%;
+  opacity: .6;
+}
+
+#rubioBG {
+  background-image: url(https://farm9.staticflickr.com/8667/16470387237_589bd6b8ef_o_d.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  position: fixed;
+  height: 100%;
+  opacity: .6;
+}
+
 #bernie,
 #hillary,
 #trump,
@@ -139,9 +180,9 @@ ul {
 }
 
 footer {
-    position: absolute;
+    position: relative;
     width: 100%;
-    height: 20px;
+    height: 10px;
     margin-bottom: -20px;
     text-align: center;
     display: inline;
