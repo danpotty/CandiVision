@@ -515,14 +515,6 @@ angular.module('stripe', []).directive('stripeForm', ['$window', function ($wind
         vm.trump;
         vm.rubio;
 
-        vm.showBusts = function () {
-            setTimeout(function () {
-                vm.busts = true;
-            }, 40);
-        }
-
-        vm.showBusts();
-
         CandidateFactory.getPresidentialCandidates().then(function (res) {
             vm.candidates = res;
         }, function (err) {
@@ -570,6 +562,8 @@ angular.module('stripe', []).directive('stripeForm', ['$window', function ($wind
                 document.getElementById("trump").style.marginTop = (175 - (trumpImg / 2)) + "px";
                 document.getElementById("rubio").height = rubioImg;
                 document.getElementById("rubio").style.marginTop = (175 - (rubioImg / 2)) + "px";
+
+                vm.busts = true;
 
                 vm.timeoutHandler = $timeout(tick, 15000);
 
