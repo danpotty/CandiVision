@@ -509,10 +509,19 @@ angular.module('stripe', []).directive('stripeForm', ['$window', function ($wind
         var url = $location.search();
         var size = 0;
         vm.timeoutHandler;
+        vm.busts = false;
         vm.bernie;
         vm.clinton;
         vm.trump;
         vm.rubio;
+
+        vm.showBusts = function () {
+            setTimeout(function () {
+                vm.busts = true;
+            }, 40);
+        }
+
+        vm.showBusts();
 
         CandidateFactory.getPresidentialCandidates().then(function (res) {
             vm.candidates = res;
