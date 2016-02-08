@@ -67,9 +67,9 @@ app.get('/*', function(req, res) {
     res.render('index');
 });
 
-// tweetReset();
+tweetReset();
 
-// dailyTimer();
+dailyTimer();
 
 
 
@@ -93,7 +93,7 @@ var clintonNeg = ["ohhillno", "#stophillary2016"];
 var trumpNeg = ["#dumptrump", "#fucktrump"];
 var rubioNeg = ["#norubio", "#rubiolies"];
 
-/*
+
 
 var Twit = require("twit");
 
@@ -480,8 +480,6 @@ var waitForTweets = function(db) {
     })
 };
 
-
-*/
 
 app.use((err, req, res, next) => {
     if (process.env.NODE_ENV !== "test") {
