@@ -103,7 +103,7 @@ module.exports = function() {
             if(!result) return('Could not delete tweets older than 10 minutes.');
         });
         console.log('Tweet collection deleted');
-      }, 1000 * 60 * 60 * 24);
+      }, 43200000);
 
   }
 
