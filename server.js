@@ -22,7 +22,9 @@ require('./models/comment');
 require('./models/invoice');
 require("./config/passport");
 let Candidate = mongoose.model("Candidate");
-mongoose.connect(process.env.MONGO_URL);
+// mongoose.connect(process.env.MONGO_URL);
+mongoose.connect('mongodb://localhost/candirevision');
+
 
 app.set('views', './views');
 app.engine('.html', require('ejs').renderFile);
@@ -255,6 +257,7 @@ var waitForTweets = function(db) {
             if (data.text.toLowerCase().match(bernieNeg[i])) {
                 sentiment(data.text, function(err, result) {
                     if (result.score < 0) {
+                      if (result.score < -10) result.score = -10;
 
                         //create new tweet
                         var tweet = new Tweet({
@@ -320,6 +323,7 @@ var waitForTweets = function(db) {
             if (data.text.toLowerCase().match(clintonNeg[i])) {
                 sentiment(data.text, function(err, result) {
                     if (result.score < 0) {
+                      if (result.score < -10) result.score = -10;
 
                       //create new tweet
                       var tweet = new Tweet({
@@ -385,6 +389,7 @@ var waitForTweets = function(db) {
             if (data.text.toLowerCase().match(trumpNeg[i])) {
                 sentiment(data.text, function(err, result) {
                     if (result.score < 0) {
+                      if (result.score < -10) result.score = -10;
 
                         //create new tweet
                         var tweet = new Tweet({
@@ -450,6 +455,7 @@ var waitForTweets = function(db) {
             if (data.text.toLowerCase().match(rubioNeg[i])) {
                 sentiment(data.text, function(err, result) {
                     if (result.score < 0) {
+                      if (result.score < -10) result.score = -10;
 
                         //create new tweet
                         var tweet = new Tweet({
